@@ -6,7 +6,7 @@
         class="movie-poster"
       />
       <h2>{{ movie.title }}</h2>
-      <p>Release Date: {{ movie.release_date }}</p>
+      <p class="date-field">Release Date: {{ movie.release_date }}</p>
     </div>
   </template>
   
@@ -23,20 +23,26 @@
   </script>
   
   <style scoped>
-  .movie-item {
-    width: 200px;
-    text-align: center;
-  }
-  
-  .movie-poster {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  h2 {
-    font-size: 18px;
-    margin: 10px 0;
-  }
+.movie-item {
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%; /* Responsive image */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: rgb(255, 255, 0);
+}
+
+p {
+  font-size: 1rem;
+  color: rgb(255, 255, 0);
+}
   </style>
   

@@ -6,7 +6,7 @@
         :movie="movie"
       />
     </div>
-  </template>
+</template>
   
   <script>
   import { getMovies } from '../services/movieService';
@@ -30,6 +30,27 @@
   .movie-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+    padding: 20px;
+  }
+  
+  .movie-item {
+    flex: 1 1 200px; 
+    max-width: 200px;
+  }
+  
+  @media (max-width: 700px) {
+    .movie-item {
+      flex: 1 1 150px; 
+      max-width: 150px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .movie-item {
+      flex: 1 1 150px; 
+      max-width: 120px;
+    }
   }
   </style>
