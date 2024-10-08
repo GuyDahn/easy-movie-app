@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const key = '4170bf35f7a61b8012d65de6ad644b9b'
-const url = 'https://api.themoviedb.org/3/movie/popular'
+const key = process.env.VUE_APP_API_KEY
+const url = process.env.VUE_APP_API_URL
 
 export const getMovies = async () => {
   try {
